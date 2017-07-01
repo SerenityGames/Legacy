@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+{% assign users = site.data.users %}
+
+<h3>Wall of Peoples</h3>
+{% for user in users %}
+  {% if user.color !=  "FFFFFF" %}
+    {% unless user.username contains '[Bot]' or user.username contains '[Crawler]' %}
+      <a {%if user.href%}href='{{ user.href }}'{%endif%} style='color: #{{user.color}};' rel='nofollow'>
+        {% if user.ign %}
+          {{ user.ign }}
+        {% else %}
+          {{ user.username }}
+        {% endif %}
+      </a>
+    {% endunless%}
+ {% endif %}
+{% endfor %}
