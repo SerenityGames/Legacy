@@ -11,11 +11,11 @@ layout: default
     {% unless user.username contains '[Bot]' or user.username contains '[Crawler]' %}
       <a class='user' href='{{ user.username | datapage_url: 'user' }}' style='color: #{{user.color}};'>
         {% if user.ign %}
-          {{ user.ign }}
+          {{ user.ign }} 
         {% else %}
           {{ user.username }}
         {% endif %}
       </a>
-    {% endunless%}
+    {% endunless %}
  {% endif %}
 {% endfor %}
