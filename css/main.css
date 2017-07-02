@@ -21,10 +21,17 @@ body {
 	 color-stop(0.55, rgb(64,64,64)),
 	 color-stop(0.81, rgb(79,79,79))
 	 );
-    padding: 20px; 
+    padding: 20px;
     width: 700px;
-    height: 100%; 
+    height: 100%;
     margin: 0 auto;
+    margin-top: 10px;
+}
+
+body > .page-content:first-child {
     margin-top: 250px;
 }
 
+a {
+  color: #3399FF;
+}

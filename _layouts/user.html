@@ -1,0 +1,38 @@
+---
+layout: default
+---
+{% if page.ign %}
+  {% assign ign = page.ign %}
+{% else %}
+  {% assign ign = page.username %}
+{% endif %}
+
+
+
+<h3 style='color: #{{page.color}};'>{{ ign }}</h3>
+
+<img src='https://mcapi.ca/skin/{{ ign }}' />
+{% if page.bio %}
+<p>
+  {{ page.bio }}
+</p>
+{% endif %}
+
+{% for link in page.links %}
+    {% if link.name == 'twitter' and link.handle %}
+    <i class="fa fa-twitter-square" aria-hidden="true"></i> <a href='https://twitter.com/{{ link.handle }}' rel='nofollow'>@{{ link.handle }}</a>
+    {% elsif link.name == 'facebook' and link.handle %}
+    <i class="fa fa-facebook-offical" aria-hidden="true"></i> <a href='https://facebook.com/{{ link.handle }}' rel='nofollow'>{{ link.handle }}</a>
+    {% elsif link.name == 'steam' and link.handle %}
+    <i class="fa fa-steam-square" aria-hidden="true"></i> <a href='http://steamcommunity.com/id/{{ link.handle }}/home' rel='nofollow'>{{ link.handle }}</a>
+    {% else %}
+    <a href='' rel='nofollow'>{{ link.name | capitalize }}</a>
+    {% endif %}
+{% endfor %}
+
+
+<p>
+  To update your page, contact <a class='user' href='/{{ 'tjbenator' | datapage_url: 'user' }}' style='color: #F55;'>tjbenator</a>
+  or create an <a href='https://github.com/SerenityGames/Legacy/issues'>issue</a>/<a href='https://github.com/SerenityGames/Legacy/pulls'>pull request</a>
+  on Github!
+</p>

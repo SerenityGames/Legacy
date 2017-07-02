@@ -6,9 +6,10 @@ layout: default
 
 <h3>Wall of Peoples</h3>
 {% for user in users %}
+  {% assign username = user.username %}
   {% if user.color !=  "FFFFFF" %}
     {% unless user.username contains '[Bot]' or user.username contains '[Crawler]' %}
-      <a {%if user.href%}href='{{ user.href }}'{%endif%} style='color: #{{user.color}};' rel='nofollow'>
+      <a class='user' href='{{ user.username | datapage_url: 'user' }}' style='color: #{{user.color}};'>
         {% if user.ign %}
           {{ user.ign }}
         {% else %}

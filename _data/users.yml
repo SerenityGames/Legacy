@@ -11358,7 +11358,15 @@
   username: "tjbenator"
   color: "F55"
   ign: "tjbenator"
-  href: "https://twitter.com/tjbenator"
+  bio: >
+    My bio goes here.
+  links:
+    -
+      name: "twitter"
+      handle: "tjbenator"
+    -
+      name: "steam"
+      handle: "tjbenator"
 -
   username: "tjehu"
   color: "3399FF"

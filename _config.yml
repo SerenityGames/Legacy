@@ -17,3 +17,9 @@ github_username: SerenityGames
 
 # Build settings
 markdown: kramdown
+
+page_gen:
+  - data: 'users'
+    template: 'user'
+    name: 'username'
+    dir: 'user'
