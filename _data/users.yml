@@ -5,6 +5,24 @@
 # SQL QUERY USED:
 # select username, user_colour as color, pf_minecraft_ign as ign from phpbb_users LEFT JOIN phpbb_profile_fields_data ON phpbb_users.user_id = phpbb_profile_fields_data.user_id WHERE user_posts > 0 AND user_type != 2 GROUP BY ign
 
+# EXAMPLE:
+# -
+#   username: "tjbenator"
+#   color: "F55"
+#   ign: "tjbenator"
+#   bio: >
+#     My bio goes here.
+#   links:
+#     -
+#       name: "twitter"
+#       handle: "tjbenator"
+#     -
+#       name: "steam"
+#       handle: "tjbenator"
+#     -
+#       name: "binarypenguin.net"
+#       url: "https://binarypenguin.net"
+#
 -
   username: "Neonwolf"
   color: "3399FF"
@@ -11367,6 +11385,9 @@
     -
       name: "steam"
       handle: "tjbenator"
+    -
+      name: "binarypenguin.net"
+      url: "https://binarypenguin.net"
 -
   username: "tjehu"
   color: "3399FF"
