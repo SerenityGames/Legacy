@@ -12,11 +12,6 @@ layout: default
 <h3 style='color: #{{page.color}};'>{{ ign }}</h3>
 
 <img src='https://mcapi.ca/skin/{{ ign }}' />
-{% if page.bio %}
-<p>
-  {{ page.bio }}
-</p>
-{% endif %}
 
 {% for link in page.links %}
     {% if link.name == 'twitter' and link.handle %}
@@ -33,7 +28,9 @@ layout: default
       {% endif %}
     {% endif %}
 {% endfor %}
-
+<p>
+{{ content }}
+</p>
 {% comment %} We don't needs this if the user has data {% endcomment %}
 {% unless page.bio or page.links %}
 <p>

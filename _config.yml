@@ -18,8 +18,18 @@ github_username: SerenityGames
 # Build settings
 markdown: kramdown
 
-page_gen:
-  - data: 'users'
-    template: 'user'
-    name: 'username'
-    dir: 'user'
+exclude: [.travis.yml, Gemfile, Gemfile.lock, ISSUE_TEMPLATE.md, README.md, CNAME]
+
+defaults:
+  - scope:
+      type: users
+    values:
+      layout: user
+
+collections:
+  # Serenity_Forum.phpbb_users
+  # SQL QUERY USED:
+  # select username, user_colour as color, pf_minecraft_ign as ign from phpbb_users LEFT JOIN phpbb_profile_fields_data ON phpbb_users.user_id = phpbb_profile_fields_data.user_id WHERE user_posts > 0 AND user_type != 2 GROUP BY ign
+  users:
+    output: true
+    permalink: /users/:path/
