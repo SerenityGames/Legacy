@@ -4,18 +4,18 @@ layout: default
 
 {% assign users = site.data.users %}
 
-<h3>Wall of Peoples</h3>
+<h3>Players of Serenity</h3>
 {% for user in users %}
   {% assign username = user.username %}
   {% if user.color !=  "FFFFFF" %}
     {% unless user.username contains '[Bot]' or user.username contains '[Crawler]' %}
       <a class='user' href='{{ user.username | datapage_url: 'user' }}' style='color: #{{user.color}};'>
         {% if user.ign %}
-          {{ user.ign }} 
+          {{ user.ign }}
         {% else %}
           {{ user.username }}
         {% endif %}
-      </a>
+      </a>&nbsp;
     {% endunless %}
  {% endif %}
 {% endfor %}
