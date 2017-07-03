@@ -31,11 +31,3 @@ layout: default
 <p>
 {{ content }}
 </p>
-{% comment %} We don't needs this if the user has data {% endcomment %}
-{% unless content or page.links %}
-<p>
-  To update your page, contact <a class='user' href='/{{ 'tjbenator' | datapage_url: 'user' }}' style='color: #F55;'>tjbenator</a>
-  or create an <a href='https://github.com/SerenityGames/Legacy/issues'>issue</a>/<a href='https://github.com/SerenityGames/Legacy/pulls'>pull request</a>
-  on Github!
-</p>
-{% endunless %}
