@@ -17,8 +17,9 @@ github_username: SerenityGames
 
 # Build settings
 markdown: kramdown
-
+strict_front_matter: true
 exclude: [.travis.yml, Gemfile, Gemfile.lock, ISSUE_TEMPLATE.md, README.md, CNAME]
+
 
 defaults:
   - scope:
