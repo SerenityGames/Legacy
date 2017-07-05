@@ -13,6 +13,8 @@ def clean_rank(rank):
         rank = 'Builder'
     if 'GLOBAL_MODERATORS' in rank:
         rank = 'Moderator'
+    if 'Serenitybot' in rank:
+        rank = 'Bot'
     rank = rank.capitalize()
     rank = rank.strip('s')
     return rank

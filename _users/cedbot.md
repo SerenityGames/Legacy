@@ -1,6 +1,6 @@
 ---
-rank: Serenitybot
+rank: Bot
 ranks:
-- Serenitybot
+- Bot
 username: cedBot
 ---
