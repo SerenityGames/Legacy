@@ -1,4 +1,8 @@
 ---
-color: 9933FF
+rank: Architect
+ranks:
+- Builder
+- Architect
+- Sponsor
 username: solofireblade
 ---

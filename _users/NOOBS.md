@@ -1,4 +1,0 @@
----
-color: FFFFFF
-username: NOOBS
----

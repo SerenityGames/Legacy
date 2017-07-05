@@ -1,4 +1,9 @@
 ---
-color: 9933FF
+rank: Architect
+ranks:
+- Donator
+- Architect
+- Builder
+- Senior
 username: hak5
 ---

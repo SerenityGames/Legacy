@@ -1,4 +1,6 @@
 ---
-color: FFFFFF
+rank: Banned
+ranks:
+- Banned
 username: cheytacsoldier5
 ---

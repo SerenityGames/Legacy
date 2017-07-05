@@ -7,9 +7,7 @@ layout: default
 <h3>Players of Serenity</h3>
 {% for user in users %}
   {% assign username = user.username %}
-  {% if user.color !=  "FFFFFF" %}
-      <a class='user' href='{{ user.url }}' style='color: #{{user.color}};'>
-        {{ user.username }}
-      </a>&nbsp;
- {% endif %}
+  <a class='user {{ user.rank | slugify }}' href='{{ user.url }}'>
+    {{ user.username }}
+  </a>&nbsp;
 {% endfor %}

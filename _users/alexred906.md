@@ -1,4 +1,8 @@
 ---
-color: 00CC00
+rank: Donator
+ranks:
+- Builder
+- Donator
+- Senior
 username: alexred906
 ---

@@ -7,12 +7,16 @@ layout: default
   {% assign ign = page.username %}
 {% endif %}
 
-
-
-<h3 style='color: #{{page.color}};'>{{ ign }}</h3>
+<h3 class='{{ page.rank | slugify }}'>{{ ign }}</h3>
 
 <img src='https://mcapi.ca/skin/{{ ign }}' />
 
+<strong>Ranks held:</strong>
+{% for r in page.ranks %}
+  <a class='{{ r | slugify }}'>{{r}}</a>
+{% endfor %}
+
+<p>
 {% for link in page.links %}
     {% if link.name == 'twitter' and link.handle %}
     <i class="fa fa-twitter-square" aria-hidden="true"></i> <a href='https://twitter.com/{{ link.handle }}' rel='nofollow'>@{{ link.handle }}</a>
@@ -28,6 +32,8 @@ layout: default
       {% endif %}
     {% endif %}
 {% endfor %}
+</p>
+
 <p>
 {{ content }}
 </p>

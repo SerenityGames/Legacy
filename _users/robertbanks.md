@@ -1,4 +1,7 @@
 ---
-color: 9933FF
+rank: Architect
+ranks:
+- Architect
+- Builder
 username: robertbanks
 ---

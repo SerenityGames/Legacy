@@ -1,4 +1,6 @@
 ---
-color: 3399FF
+rank: Builder
+ranks:
+- Builder
 username: mp3vsalex
 ---

@@ -1,4 +1,7 @@
 ---
-color: 009900
+rank: Senior
+ranks:
+- Senior
+- Builder
 username: superdoedoe
 ---

@@ -1,5 +1,9 @@
 ---
-color: F55
+rank: Owner
+ranks:
+- Builder
+- Owner
+username: tjbenator
 links:
 - handle: tjbenator
   name: twitter
@@ -7,6 +11,5 @@ links:
   name: steam
 - name: binarypenguin.net
   url: https://binarypenguin.net
-username: tjbenator
+
 ---
-My bio goes here.

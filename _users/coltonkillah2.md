@@ -1,4 +1,8 @@
 ---
-color: 9933FF
+rank: Architect
+ranks:
+- Builder
+- Senior
+- Architect
 username: coltonkillah2
 ---

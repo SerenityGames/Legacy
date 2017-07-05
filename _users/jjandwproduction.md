@@ -1,4 +1,7 @@
 ---
-color: 3333FF
+rank: Sponsor
+ranks:
+- Sponsor
+- Builder
 username: jjandwproduction
 ---
