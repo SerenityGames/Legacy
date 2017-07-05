@@ -33,9 +33,12 @@ body > .page-content:first-child {
 }
 
 a {
-  color: #3399FF;
+    color: #3399FF;
 }
 
+.banned {
+    color: #FFFFFF;
+}
 .builder {
     color: #3399FF;
 }

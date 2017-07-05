@@ -62,6 +62,9 @@ for (uid, username, ign, primary_rank) in mcursor:
         rank = clean_rank(rank)
         #Add if not already in the list
         if not rank in ranks:
+            # Add Builder to ranks for banned members.
+            if rank == 'Banned':
+                ranks += ('Builder', )
             ranks += (rank,)
     if username == 'jason_kull':
         ranks += ('SysOp',)
