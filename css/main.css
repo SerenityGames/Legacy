@@ -33,5 +33,44 @@ body > .page-content:first-child {
 }
 
 a {
-  color: #3399FF;
+    color: #3399FF;
+}
+
+.banned {
+    color: #FFFFFF;
+}
+.builder {
+    color: #3399FF;
+}
+
+.senior {
+    color: #009900;
+}
+
+.architect {
+    color: #9933FF;
+}
+
+.donator {
+    color: #00CC00;
+}
+
+.bot {
+    color: #9E8DA7;
+}
+
+.sponsor {
+    color: #3333FF;
+}
+
+.moderator {
+    color: #FF9900;
+}
+
+.administrator {
+    color: #aa0000;
+}
+
+.owner {
+    color: #F55555;
 }
